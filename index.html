@@ -35,17 +35,44 @@
                 </button>
             </form>
         </div>
-        
-        <div class="navbar-nav ms-auto">
-            <a href="index.html" class="nav-link btn btn-outline-primary btn-sm me-2">Login</a>
-            <a href="signup.html" class="nav-link btn btn-primary btn-sm">Sign Up</a>
-        </div>
+      <div class="navbar-nav ms-auto nav-auth d-flex align-items-center">
+        <a href="profile.html" class="nav-user-icon"></a>
+
+    
+    <a href="index.html" class="btn btn-outline-primary btn-sm nav-btn">
+        Login
+    </a>
+
+    <a href="signup.html" class="btn btn-primary btn-sm nav-btn">
+        Sign Up
+    </a>
+
+    <a href="profile.html" class="nav-user-icon" title="Profile">
+        <i class="fas fa-user-circle"></i>
+    </a>
+
+</div>
+
+
     </div>
 </nav>
 
 <!-- Hero Section -->
+ <!-- Mobile Search Bar (Hero Top) -->
+<div class="container d-md-none hero-mobile-search">
+    <form class="d-flex">
+        <input class="form-control me-2"
+               type="search"
+               placeholder="Search products, brands, categories...">
+        <button class="btn btn-primary" type="submit">
+            <i class="fas fa-search"></i>
+        </button>
+    </form>
+</div>
+
+
 <section class="hero-section py-5">
-    <div class="container">
+   <div class="container">
         <div class="row align-items-center g-5">
             <div class="col-lg-7 text-center text-lg-start">
                 <h1 class="hero-title display-4 fw-bold mb-4">
@@ -75,6 +102,8 @@
         </div>
     </div>
 </section>
+
+
 
 <!-- Categories Section -->
  <section id="buy" class="categories-section py-5 bg-light">
@@ -297,6 +326,7 @@
                 <a href="#" class="text-light small text-decoration-none">Cookies</a>
             </div>
         </div>
+        
     </div>
 </footer>
 

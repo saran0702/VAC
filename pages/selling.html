@@ -118,10 +118,95 @@
   text-decoration: none;
   color: #000;
 }
+/* =================================================
+   SELLING PAGE – MOBILE RESPONSIVE (FINAL FIX)
+   Desktop unchanged
+================================================= */
+
+@media (max-width: 768px) {
+
+  /* Scope ONLY selling page */
+  body.sell-page {
+    height: auto;
+    align-items: flex-start;
+    overflow-x: hidden;
+  }
+
+  /* Main container */
+  body.sell-page .container {
+    width: 100%;
+    max-width: 420px;
+    margin: 80px auto 40px;
+    padding: 20px;
+    border-radius: 16px;
+  }
+
+  /* Stack layout */
+  body.sell-page .content {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  /* FORM FIRST */
+  body.sell-page .form {
+    width: 100%;
+    order: 1;
+  }
+
+  body.sell-page .form-group {
+    margin-bottom: 16px;
+  }
+
+  body.sell-page .form-group input {
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 14px;
+  }
+
+  /* IMAGE AFTER FORM */
+  body.sell-page .image-box {
+    width: 100%;
+    height: 260px;
+    order: 2;
+    border-radius: 16px;
+  }
+
+  body.sell-page .image-box span {
+    font-size: 14px;
+  }
+
+  /* PUBLISH BUTTON LAST */
+  body.sell-page .publish-btn {
+    width: 100%;
+    order: 3;
+    padding: 14px;
+    font-size: 15px;
+    border-radius: 30px;
+    margin-top: 20px;
+  }
+
+  /* Header spacing */
+  body.sell-page .header {
+    margin-bottom: 20px;
+    font-size: 18px;
+    letter-spacing: 3px;
+  }
+
+  /* Back arrow fix */
+  body.sell-page .back-arrow {
+    top: 18px;
+    left: 16px;
+    font-size: 20px;
+  }
+}
+
 
   </style>
 </head>
 <body>
+  <body class="sell-page">
+
  <a href="home.html" class="back-arrow">←</a>
 
 
@@ -157,9 +242,9 @@
         <input type="file" id="imageInput" accept="image/png, image/jpeg" hidden />
       </div>
     </div>
-
-    <button class="publish-btn" onclick="publishItem()">Publish</button>
+     <button class="publish-btn" onclick="publishItem()">Publish</button>
   </div>
+  
 
   <script>
     const imageInput = document.getElementById("imageInput");
@@ -195,5 +280,6 @@
       alert("Item Published Successfully!\n" + JSON.stringify(data, null, 2));
     }
   </script>
+  
 </body>
 </html>

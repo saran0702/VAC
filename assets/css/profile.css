@@ -1,0 +1,146 @@
+/* =====================
+   COLOR VARIABLES
+===================== */
+:root {
+    --bg-main: #f4f6f8;
+    --card-bg: #ffffff;
+    --primary: #1e3a8a;     /* Deep blue */
+    --secondary: #2563eb;   /* Action blue */
+    --success: #16a34a;     /* Professional green */
+    --text-main: #1f2937;   /* Dark gray */
+    --text-muted: #6b7280;  /* Muted text */
+    --border-light: #e5e7eb;
+}
+
+/* =====================
+   BASE
+===================== */
+body {
+    margin: 0;
+    font-family: "Segoe UI", Roboto, sans-serif;
+    background: var(--bg-main);
+    color: var(--text-main);
+}
+
+.back-btn {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    font-size: 22px;
+    text-decoration: none;
+    color: var(--primary);
+}
+
+/* =====================
+   LAYOUT
+===================== */
+.profile-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 16px 40px;
+}
+
+/* =====================
+   PROFILE ICON
+===================== */
+.profile-icon {
+    font-size: 68px;
+    color: var(--primary);
+    margin-bottom: 18px;
+}
+
+/* =====================
+   CARD
+===================== */
+.profile-card {
+    background: var(--card-bg);
+    width: 360px;
+    padding: 32px 28px;
+    border-radius: 14px;
+    border: 1px solid var(--border-light);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+/* =====================
+   FORM
+===================== */
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-muted);
+    margin-bottom: 6px;
+    display: block;
+}
+
+.form-group input {
+    width: 330px;
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: 1px solid var(--border-light);
+    font-size: 14px;
+    background: #ffffff;
+    color: var(--text-main);
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--secondary);
+}
+
+/* =====================
+   BUTTONS
+===================== */
+.btn-group {
+    display: flex;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.edit-btn {
+    flex: 1;
+    background: #e5e7eb;
+    color: var(--text-main);
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.save-btn {
+    flex: 1;
+    background: var(--secondary);
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.edit-btn:hover {
+    background: #d1d5db;
+}
+
+.save-btn:hover {
+    background: #1d4ed8;
+}
+
+/* =====================
+   MOBILE
+===================== */
+@media (max-width: 576px) {
+    .profile-card {
+        width: 100%;
+    }
+
+    .btn-group {
+        flex-direction: column;
+    }
+}

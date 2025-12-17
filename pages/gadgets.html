@@ -13,54 +13,64 @@
     <h5 class="page-title">GADGETS</h5>
 
     <div class="row">
-        <div class="col-6 col-md-3 product-card">
+        <div class="col-6 col-md-3 product-card" data-price="₹2,000">
+
             <img src="../assets/images/products/efbb17fc0cfc2be91f2c913c66676a5f-removebg-preview.png">
             <div class="product-name">Smart Watch</div>
             <div class="product-price">Price : 2,000</div>
         </div>
+<div class="col-6 col-md-3 product-card" data-price="₹2,500">
 
-        <div class="col-6 col-md-3 product-card">
             <img src="../assets/images/products/711d3a3ab8a6451ef0003094098e3ecc-removebg-preview.png">
             <div class="product-name">Headset</div>
             <div class="product-price">Price : 2,500</div>
         </div>
 
-        <div class="col-6 col-md-3 product-card">
+        <div class="col-6 col-md-3 product-card" data-price="₹1,500">
+
             <img src="../assets/images/products/0a4d8acd66c1f2b3a8ce49a03ae768fe-removebg-preview.png">
             <div class="product-name">Airbuds</div>
             <div class="product-price">Price : 1,500</div>
         </div>
 
-        <div class="col-6 col-md-3 product-card">
+      <div class="col-6 col-md-3 product-card" data-price="₹1,000">
+
             <img src="../assets/images/products/75b6c54ba25558a0c01c46d351fe8115-removebg-preview.png">
             <div class="product-name">BT Speaker</div>
             <div class="product-price">Price : 1,000</div>
         </div>
 
-         <div class="col-6 col-md-3 product-card">
+         <div class="col-6 col-md-3 product-card" data-price="₹300">
+
             <img src="../assets/images/products/bb4cfaac96bb84f0e903bdeb34584415-removebg-preview.png">
             <div class="product-name">AUX Cable</div>
             <div class="product-price">Price : 300</div>
         </div>
-         <div class="col-6 col-md-3 product-card">
+       <div class="col-6 col-md-3 product-card" data-price="₹500">
+
             <img src="../assets/images/products/6d0a88bd91c22cdd95572324398aa69a-removebg-preview.png">
             <div class="product-name">Mouse</div>
             <div class="product-price">Price : 500</div>
         </div>
-           <div class="col-6 col-md-3 product-card">
+           <div class="col-6 col-md-3 product-card" data-price="₹700">
+
             <img src="../assets/images/products/2bd4b32ae3b9666f7dc0e8d71032e424-removebg-preview.png">
             <div class="product-name">Pendrive</div>
             <div class="product-price">Price : 700</div>
         </div>
-         </div>
-           <div class="col-6 col-md-3 product-card">
-            <img src="../assets/images/products/fe1d27768a892df798225663c5c0b130-removebg-preview.png">
-            <div class="product-name">Charger</div>
-            <div class="product-price">Price : 1,200</div>
-        </div>
-        
+       
     </div>
 </div>
+<script src="../assets/js/bootstrap.bundle.min.js"></script>
+<script>
+function openDetails(name, price, image, about) {
+    const url = `item-details.html?name=${encodeURIComponent(name)}
+        &price=${encodeURIComponent(price)}
+        &image=${encodeURIComponent(image)}`;
+    window.location.href = url;
+}
+</script>
+
 
 </body>
 </html>

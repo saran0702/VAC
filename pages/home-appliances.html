@@ -7,38 +7,77 @@
     <link rel="stylesheet" href="../assets/css/category.css">
 </head>
 <body>
-
-<div class="container">
+    <div class="container">
     <a href="./home.html" class="back-btn">←</a>
     <h5 class="page-title">HOME APPLIANCES</h5>
 
     <div class="row">
-        <div class="col-6 col-md-3 product-card">
-            <img src="../assets/images/products/a68b5fc20abb3ce5435f5ed2a659e8bf.jpg">
-            <div class="product-name">Washing Machine</div>
-            <div class="product-price">Price : 10,000</div>
-        </div>
+       <div class="col-6 col-md-3 product-card"
+     onclick="openDetails(
+        'Washing Machine',
+        '10,000',
+        '../assets/images/products/a68b5fc20abb3ce5435f5ed2a659e8bf.jpg'
+        
+     )"
+     data-price="₹10,000">
+     
+    <img src="../assets/images/products/a68b5fc20abb3ce5435f5ed2a659e8bf.jpg">
+    <div class="product-name">Washing Machine</div>
+</div>
 
-        <div class="col-6 col-md-3 product-card">
-            <img src="../assets/images/products/67081ad6506e8b9fda0711c97116b9dc.jpg">
-            <div class="product-name">Dish Washer</div>
-            <div class="product-price">Price : 14,000</div>
-        </div>
 
-        <div class="col-6 col-md-3 product-card">
-            <img src="../assets/images/products/b93a48094a955751f00087b04ea8d80b.jpg">
-            <div class="product-name">Air Fryer</div>
-            <div class="product-price">Price : 13,000</div>
-        </div>
+        <div class="col-6 col-md-3 product-card"
+     onclick="openDetails(
+        'Dish washer',
+        '14,000',
+        '../assets/images/products/67081ad6506e8b9fda0711c97116b9dc.jpg'
+     )"
+     data-price="₹14,000">
+     
+    <img src="../assets/images/products/67081ad6506e8b9fda0711c97116b9dc.jpg">
+    <div class="product-name">Dish washer</div>
+</div>
 
-        <div class="col-6 col-md-3 product-card">
-            <img src="../assets/images/products/c3241a9ff06928903ac0d69ae98be3b9.jpg">
-            <div class="product-name">Microwave Oven</div>
-            <div class="product-price">Price : 12,000</div>
-        </div>
+
+
+        <div class="col-6 col-md-3 product-card"
+     onclick="openDetails(
+        'Air fryer',
+        '8,000',
+        '../assets/images/products/b93a48094a955751f00087b04ea8d80b.jpg'
+     )"
+     data-price="₹8,000">
+     
+    <img src="../assets/images/products/b93a48094a955751f00087b04ea8d80b.jpg">
+    <div class="product-name">Air fryer</div>
+</div>
+
+
+        
+        <div class="col-6 col-md-3 product-card"
+     onclick="openDetails(
+        'Microwave oven',
+        '6,000',
+        '../assets/images/products/microwave oven.png'
+     )"
+     data-price="₹6,000">
+     
+    <img src="../assets/images/products/microwave oven.png">
+    <div class="product-name">Microwave oven</div>
+</div>
+
     </div>
 </div>
 
 <script src="../assets/js/bootstrap.bundle.min.js"></script>
+<script>
+function openDetails(name, price, image, about) {
+    const url = `item-details.html?name=${encodeURIComponent(name)}
+        &price=${encodeURIComponent(price)}
+        &image=${encodeURIComponent(image)}`;
+    window.location.href = url;
+}
+</script>
+
 </body>
 </html>
